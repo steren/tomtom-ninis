@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Boîte à Philippe</title>
+  </head>
+  <body>
+    <div class="column">
+      <button>Ta gueule !</button>
+      <audio src="https://cdn.jsdelivr.net/gh/BrianGiannini/soundbox-android/app/src/main/res/raw/sound1_1.mp3" ></audio>
+
+      <button>Viens ici sale enculé</button>
+      <audio src="https://cdn.jsdelivr.net/gh/BrianGiannini/soundbox-android/app/src/main/res/raw/sound1_2.mp3" ></audio>
+    </div>
+  
+    <div class="column">
+      <button>Philippe!</button>
+      <audio src="https://cdn.jsdelivr.net/gh/BrianGiannini/soundbox-android/app/src/main/res/raw/sound2_1.mp3" ></audio>
+
+      <button>Je sais où tu te caches</button>
+      <audio  src="https://cdn.jsdelivr.net/gh/BrianGiannini/soundbox-android/app/src/main/res/raw/sound2_2.mp3" ></audio>
+
+      <button>Viens ici que je te bute enculé</button>
+      <audio src="https://cdn.jsdelivr.net/gh/BrianGiannini/soundbox-android/app/src/main/res/raw/sound2_3.mp3" ></audio>
+
+      <button>Salaud !</button>
+      <audio src="https://cdn.jsdelivr.net/gh/BrianGiannini/soundbox-android/app/src/main/res/raw/sound2_4.mp3" ></audio>
+    </div>
+  </body>
+  <style>
+  html, body {
+    height: 100%;
+  }
+  body {
+    display: flex;
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+  }
+  button {
+    flex: 1 1 auto;
+    margin: 2px;
+  }
+  </style>
+  <script>
+  for (let button of document.getElementsByTagName("button")) {
+    button.onclick = function() {
+      this.nextElementSibling.play();
+    };
+  }
+  </script>
+</html>
