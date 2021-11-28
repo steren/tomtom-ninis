@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width">
 
     <meta name="theme-color" content="#6200ee"/>
-    <title>Jojos soundboard</title>
+    <title>Tomtom des Ninis</title>
     <link rel="icon" type="image/png" sizes="512x512" href="icon.png">
 
     <link rel="manifest" href="manifest.json">
@@ -111,46 +111,48 @@
 
   </head>
   <body>
-    <button>On est tous</button>
-    <audio src="sounds/on-est-tous.mp3" ></audio>
+    <main>
+      <button>C'est parti autoroute</button><audio src="sounds/C'est parti autoroute.ogg"></audio>
+      <button>Après</button><audio src="sounds/Après.ogg"></audio>
+      <button>800 m</button><audio src="sounds/800 m.ogg"></audio>
+      <button>100 m</button><audio src="sounds/100 m.ogg"></audio>
+      <button>300 m</button><audio src="sounds/300 m.ogg"></audio>
+      <button>500 m</button><audio src="sounds/500 m.ogg"></audio>
+      <button>Puis</button><audio src="sounds/Puis.ogg"></audio>
+      <button>Rond point droite</button><audio src="sounds/Rond point droite.ogg"></audio>
+      <button>Rond point gauche</button><audio src="sounds/Rond point gauche.ogg"></audio>
+      <button>Rond point traversez</button><audio src="sounds/Rond point traversez.ogg"></audio>
+      <button>Tenez la droite</button><audio src="sounds/Tenez la droite.ogg"></audio>
+      <button>Tenez la gauche</button><audio src="sounds/Tenez la gauche.ogg"></audio>
+      <button>Tournez à droite</button><audio src="sounds/Tournez à droite.ogg"></audio>
+      <button>Tournez à gauche</button><audio src="sounds/Tournez à gauche.ogg"></audio>
+      <button>Tout droit tenez la gauche</button><audio src="sounds/Tout droit tenez la gauche.ogg"></audio>
+      <button>Tout droit</button><audio src="sounds/Tout droit.ogg"></audio>
+      <button>Virage à droite</button><audio src="sounds/Virage à droite.ogg"></audio>
+      <button>Virage à gauche</button><audio src="sounds/Virage à gauche.ogg"></audio>
+      <button>Visez deuxième droite</button><audio src="sounds/Visez deuxième droite.ogg"></audio>
+      <button>À la fin de la route</button><audio src="sounds/À la fin de la route.ogg"></audio>
+      <button>Arrivé</button><audio src="sounds/Arrivé.ogg"></audio>
+      <button>Demi tour</button><audio src="sounds/Demi tour.ogg"></audio>
+      <button>Deuxième à gauche</button><audio src="sounds/Deuxième à gauche.ogg"></audio>
+      <button>Dirrigez vous à droite</button><audio src="sounds/Dirrigez vous à droite.ogg"></audio>
+      <button>Hahaha</button><audio src="sounds/Hahaha.ogg"></audio>
+      <button>Peut être sortir</button><audio src="sounds/Peut être sortir.ogg"></audio>
+      <button>Première sortie</button><audio src="sounds/Première sortie.ogg"></audio>
+      <button>Prenez la sortie</button><audio src="sounds/Prenez la sortie.ogg"></audio>
+    </main>
 
-    <button>Cette Année</button>
-    <audio src="sounds/cette-annee.mp3" ></audio>
+    <script>
+    for (let button of document.getElementsByTagName("button")) {
+      button.onclick = function() {
+        this.nextElementSibling.play();
+      };
+    }
+    </script>
+  
+    <!-- <script>
+      navigator.serviceWorker.register('sw.js')
+    </script> -->
 
-    <button>Defuse</button>
-    <audio src="sounds/bomb-defusal.mp3" ></audio>
-
-    <button>Amster dam</button>
-    <audio src="sounds/amsterdam.mp3" ></audio>
-
-    <button>Héhéhé</button>
-    <audio src="sounds/lambert.mp3" ></audio>
-
-    <button>Famille amis travail</button>
-    <audio src="sounds/famille-ami-travail.mp3" ></audio>
-
-    <button>On croise pas !</button>
-    <audio src="sounds/croise-pas.mp3" ></audio>
-
-    <button>CAPODA</button>
-    <audio src="sounds/palalalalalalalalalala.mp3" ></audio>
-
-    <button>Straight</button>
-    <audio src="sounds/straight-through-those-doors.mp3" ></audio>
-
-    <button>Ski ahahah</button>
-    <audio src="sounds/ski.mp3" ></audio>
   </body>
-
-  <script>
-  for (let button of document.getElementsByTagName("button")) {
-    button.onclick = function() {
-      this.nextElementSibling.play();
-    };
-  }
-  </script>
-
-  <script>
-    navigator.serviceWorker.register('sw.js')
-  </script>
 </html>

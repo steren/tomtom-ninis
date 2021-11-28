@@ -1,9 +1,9 @@
 {
-  "short_name": "Jojos",
-  "name": "Jojos board",
+  "short_name": "Tomtom",
+  "name": "Tomtom des Ninis",
   "icons": [
     {
-      "src": "icon.png",
+      "src": "splash-512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
