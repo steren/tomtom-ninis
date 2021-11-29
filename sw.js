@@ -14,7 +14,6 @@ var urlsToCache = [
   "sounds/Demi tour.ogg",
   "sounds/Deuxième à gauche.ogg",
   "sounds/Dirrigez vous à droite.ogg",
-  "sounds/filenames.txt",
   "sounds/Hahaha.ogg",
   "sounds/Peut être sortir.ogg",
   "sounds/Première sortie.ogg",
