@@ -6,10 +6,15 @@
       "src": "splash-512.png",
       "type": "image/png",
       "sizes": "512x512"
+    },
+    {
+      "src": "splash-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
     }
   ],
   "start_url": "/",
-  "background_color": "white",
+  "background_color": "black",
   "display": "standalone",
   "scope": "/",
   "theme_color": "#1b5557"
