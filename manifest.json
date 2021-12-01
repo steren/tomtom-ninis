@@ -3,18 +3,23 @@
   "name": "Tomtom des Ninis",
   "icons": [
     {
-      "src": "splash-512.png",
+      "src": "splash-512-maskable.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "maskable"
     },
     {
       "src": "splash-192.png",
       "type": "image/png",
       "sizes": "192x192"
+    },
+    {
+      "src": "splash-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
   "start_url": "/",
-  "background_color": "black",
   "display": "standalone",
   "scope": "/",
   "theme_color": "#1b5557"
